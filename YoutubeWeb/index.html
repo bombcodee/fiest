@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- meta 뜻 -->
+
+    <script src="https://kit.fontawesome.com/16e2b0f4fc.js" crossorigin="anonymous"></script>
+
+    <link rel ="stylesheet" href="style.css"> <!-- rel style sheet, href 가 무엇인지?-->
+    <title>Y M</title> 
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <i class="fa-brands fa-youtube"></i>
+            <span class="title">Youtube</span>
+        </div>
+        <div class="icons">
+            <i class="fa-solid fa-magnifying-glass"></i> <!--이미지 넣어야함-->
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+
+    </header>
+
+    <!-- Video Player-->
+    <section class="player">
+        <video controls src="video/test.mp4"></video>
+    </section>
+
+    <!-- Video Info -->
+    <section class="info">
+
+        <!-- Video Info.Metadata -->
+        <div class="metadata">
+            <ul class="hashtags">
+                <li>#WebProgramming</li>
+                <li>#Jooho</li>
+                <li>#stillhungry</li>
+            </ul>
+            <div class="titleAndButton">
+                <span class="title">
+                    삶이 그대를 속일지라도 슬퍼하거나 노하지 말아라 슬픈 날에 참고 견디라.
+                    즐거운 날은 오고야 말리니 마음은 미래를 바라느니 현재는 한없이 우울한것
+                    모든건 하염없이 사라지나가 버리고 그리움이 되리니 – 푸쉬킨
+                </span>
+                <button class="moreBtn">
+                    <i class="fa-solid fa-caret-down"></i>
+                </button>
+            </div>
+            <div class="views">
+                <span class="views">1M views 1 month ago </span> 
+            </div>
+        </div>
+
+        <!-- Video Info.Actions -->
+        <ul class="actions">
+            <li>
+                <button>
+                    <i class="fa-solid fa-thumbs-up">1K</i>
+                </button>
+            </li>
+            <li>
+                <button>
+                    <i class="fa-solid fa-thumbs-down">0</i>
+                </button>
+            </li>
+            <li>
+                <button>
+                    <i class="fa-solid fa-share">Share</i>
+                </button>
+            </li>
+            <li>
+                <button>
+                    <i class="fa-solid fa-download">Save</i>
+                </button>
+            </li>
+            <li>
+                <button>
+                    <i class="fa-solid fa-flag">Report</i>
+                </button>
+            </li>
+        </ul>
+
+        <!-- Video Info.Channel Description -->
+        <div class="channel">
+            <div class="metadata">
+                <img src="image/캡처.PNG" alt="">
+                <span class="name"></span>
+                <span class="subscribers"></span>
+            </div>
+            <button class="subscribe">subscribe</button>
+        </div>
+    </section>
+    
+    <!-- UpNext -->
+    <section class="UpNext">
+        <span class="title">Up Next</span>
+        <ul>
+            <li class="item">
+                <img src="image/my.jpg" alt="">
+                <span class="title">???1</span>
+                <span class="channelname">J by H</span>
+                <span class="views">82K views</span>
+                <button class="moreBtn"></button>
+            </li>
+            <li class="item">
+                <img src="image/my.jpg" alt="">
+              
+                    <span class="title">???2</span>
+                    <span class="channelname">J by H</span>
+                    <span class="views">82K views</span>    
+              
+                <button class="moreBtn"></button>
+            </li>
+            <li class="item">
+                <img src="image/my.jpg" alt="">
+                <span class="title">???2</span>
+                <span class="channelname">J by H</span>
+                <span class="views">82K views</span>
+                <button class="moreBtn"></button>
+            </li>
+        </ul>
+    </section>
+
+
+</body>
+
+
+</html>
