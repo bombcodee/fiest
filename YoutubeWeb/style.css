@@ -1,5 +1,6 @@
 /* 바로 막 시작하지 말고 전반적으로 어떤 스타일, 색상 등을 사용할 것인지 생각*/
 /* 일정하게 하기 위해 자주 사용될거 같은 것들은 변수를 정해서 관리*/
+/* css 적용범위는 최대한 세세하게 잡기 */
 .title{
     font-family: 'Roboto', sans-serif;
     font-size: larger;
@@ -47,14 +48,6 @@ button:focus{
     outline: none;
     background-color: var(--white-color);
 }
-
-p {
-    width: 300px;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-    overflow: hidden;
-  }
   
 /* Header */
 header{
@@ -100,7 +93,7 @@ header .icons .fa-magnifying-glass
 .info .metadata .hashtags {
     display: flex;
     font-size: var(—font-small);
-    color: var(—blue-color);
+    color: var(--blue-color);
 }
 
 .info .metadata .hashtags li {
@@ -113,7 +106,57 @@ header .icons .fa-magnifying-glass
 
 .info .metadata .titleAndButton .title{
     font-size: var(—font-micro);
+    width: 1000px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.info .metadata .titleAndButton .moreBtn{
+    height: 100%;
+}
+
+.info .views{
+    font-size: var(--font-small);
+    color: var(--gray-dark-color);
+}
+
+.actions {
+    display: flex;
+    justify-content: space-around;
+    margin: var(--padding) 0;
+}
+
+.actions button {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    font-size: var(--font-small);
+    color: var(--gray-dark-color);
 }
 
 
+.actions button i {
+    margin: 0 auto;
+    margin-bottom: calc(var(--padding)/2);
+    font-size: 16px;
+    
+}
 
+.actions button i.active{
+    color: var(--blue-color);
+}
+
+/* Channel Description */
+.channel{
+    display: flex;
+}
+
+.channel .metadata{
+    display: flex;
+}
+
+.channel .metadata img{
+    width: var(--avatar-size);/*아바타 사이즈 아직 설정 안해줌*/
+    border-radius: 50%;
+}
