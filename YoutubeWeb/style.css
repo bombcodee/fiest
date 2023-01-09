@@ -1,24 +1,32 @@
 /* 바로 막 시작하지 말고 전반적으로 어떤 스타일, 색상 등을 사용할 것인지 생각*/
 /* 일정하게 하기 위해 자주 사용될거 같은 것들은 변수를 정해서 관리*/
-
-/*root 가 뭔지 ??*/
-:root{
-
-    /* Color */
---white-color: #ffffff;
-
-/* Size */
---side-padding: 12px;
---avartar-size: 36px;
-
-/* Font Size */
---font-large: 18px;
-
-
-
+.title{
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
 }
 
-*{
+:root {
+    /* Color */
+    --white-color: #fff;
+    --black-color: #140a00;
+    --blue-color: #045fd4;
+    --red-color: #ff0000;
+    --gray-dark-color:#909090;
+    --gray-light-color: #e0e0e0;
+    
+    /* Size */
+    --padding: 12px;
+    --margin: 36px;
+
+    /* Font Size */
+    --font-large: 18px;
+    --font-medium: 14px;
+    --font-small: 12px;
+    --font-micro: 10px;
+}
+
+/* All Tag */
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -28,7 +36,84 @@ body{
     font-family: Roboto;
 }
 
-/* Header */
-header {
-    display
+ul{
+    list-style: none; /*리스트스타일 없애기*/
 }
+
+button,
+button:focus{
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: var(--white-color);
+}
+
+p {
+    width: 300px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }
+  
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding);
+    background-color: var(--black-color);
+    color: var(--white-color); 
+}
+
+header .logo{
+    font-size: var(--font-medium);
+}
+
+header .logo i {
+    color: var(--red-color);
+}
+
+header .icons .fa-magnifying-glass
+{
+    margin-right: var(--padding);
+}
+
+/* Video Player */
+.player{
+    position: sticky;
+    top: 0;
+    text-align: center;
+    background-color: var(--black-color);
+}
+
+.player video{
+    width: 20%;
+    height: 20%;
+    max-width: 1000px;
+    
+}
+
+.info{
+    padding: var(—padding);
+}
+
+.info .metadata .hashtags {
+    display: flex;
+    font-size: var(—font-small);
+    color: var(—blue-color);
+}
+
+.info .metadata .hashtags li {
+    margin-right: var(—padding);
+}
+
+.info .metadata .titleAndButton{
+    display: flex; 
+}
+
+.info .metadata .titleAndButton .title{
+    font-size: var(—font-micro);
+}
+
+
+
