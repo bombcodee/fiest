@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- meta 뜻 -->
 
-    <script src="https://kit.fontawesome.com/16e2b0f4fc.js" crossorigin="anonymous"></script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-
+    
     <link rel ="stylesheet" href="style.css"> <!-- rel style sheet, href 가 무엇인지?-->
+    
+    <script src="https://kit.fontawesome.com/16e2b0f4fc.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
+
     <title>Y M</title> 
 </head>
 <body>
@@ -33,7 +35,8 @@
     <section class="player">
         <video controls src="video/test.mp4"></video>
     </section>
-
+<div class="infoAndUpNext">
+    
     <!-- Video Info -->
     <section class="info">
 
@@ -45,7 +48,7 @@
                 <li>#stillhungry</li>
             </ul>
             <div class="titleAndButton">
-                <span class="title">
+                <span class="title clamp"> <!-- clamp가 굳이 없어도 된다 -->
                     삶이 그대를 속일지라도 슬퍼하거나 노하지 말아라 슬픈 날에 참고 견디라.
                     즐거운 날은 오고야 말리니 마음은 미래를 바라느니 현재는 한없이 우울한것
                     모든건 하염없이 사라지나가 버리고 그리움이 되리니 – 푸쉬킨
@@ -105,7 +108,7 @@
         </div>
     </section>
     
-    <!-- UpNext -->
+        <!-- UpNext -->
     <section class="UpNext">
         <span class="title">Up Next</span>
         <ul>
@@ -145,8 +148,7 @@
         </ul>
     </section>
 
+</div>
+
 </body>
-
-
 </html>
- 
