@@ -1,0 +1,26 @@
+.orange{
+  color: orange;
+}
+.tomato{
+  color: tomato;
+}
+
+a:hover{
+  color: violet;
+  text-underline-offset: -5px;
+  /* text-underline-position: auto; */
+}
+a:active{
+  color:aqua;
+}
+
+.container{
+  font-size: 22px;
+  font-weight: 700;
+  font-family: serif;
+  line-height: 2;
+  text-align: center;
+  color: blue;
+  text-decoration:underline;
+  word-break: keep-all;
+}

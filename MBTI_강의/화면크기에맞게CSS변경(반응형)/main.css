@@ -1,0 +1,24 @@
+.container {
+  height:  100px;
+  border: 10px solid black;
+  transition: 1s;
+}
+
+.container .item {
+  width: 200px;
+  height: 100px;
+  background-color: royalblue;
+}
+
+/* 미디어쿼리(미디어 규칙) --> 브라우저 화면의 크기에 맞게 CSS 새롭게 지정 */
+@media (max-width: 600px) {
+  .container{
+    height:  200px;
+    border: 10px solid red;
+    background-color: orange;
+  }
+  .container .item{
+    width: 100px;
+    height: 300px;
+  }
+}
