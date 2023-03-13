@@ -24,3 +24,4 @@ form.addEventListener("submit", function (event) {
   // 입력 창 초기화
   newTodo.value = "";
 });
+ 
